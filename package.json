@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/error-tools-msg2id",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Return a two-character error identifier corresponding to a provided error message.",
   "license": "Apache-2.0",
   "author": {
