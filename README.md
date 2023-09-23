@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/error-tools-msg2id/tags). For example,
+
+```javascript
 import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@v0.1.0-esm/index.mjs';
 ```
 
@@ -97,7 +102,7 @@ var v = msg2id( 'beep boop baz' );
 <body>
 <script type="module">
 
-import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@v0.1.0-esm/index.mjs';
+import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@esm/index.mjs';
 
 var list;
 var v;
