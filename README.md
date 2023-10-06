@@ -45,25 +45,98 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/error-tools-msg2id
+```
 
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var msg2id = require( '@stdlib/error-tools-msg2id' );
+```
+
+#### msg2id( msg )
+
+Returns a two-character error identifier corresponding to a provided error message.
+
+```javascript
+var v = msg2id( 'invalid value. `%s` must be a number. Value: `%s`.' );
+// e.g., returns '6d'
+```
+
+If provided an unrecognized error message, the function returns `null`.
+
+```javascript
+var v = msg2id( 'beep boop baz' );
+// returns null
+```
+
+</section>
+
+<!-- /.usage -->
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
+<section class="notes">
 
+</section>
+
+<!-- /.notes -->
 
 <!-- Package usage examples. -->
 
+<section class="examples">
 
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var msg2id = require( '@stdlib/error-tools-msg2id' );
+
+var list;
+var v;
+var i;
+
+list = [
+    'invalid argument. First argument must be a number and not `NaN`. Value: `%s`.',
+    'invalid argument. First argument must be a positive integer. Value: `%s`.'
+];
+
+for ( i = 0; i < list.length; i++ ) {
+    v = list[ i ];
+    console.log( 'msg: "%s". id: "%s".', v, msg2id( v ) );
+}
+```
+
+</section>
+
+<!-- /.examples -->
 
 <!-- Section for describing a command-line interface. -->
 
-
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -81,7 +154,7 @@ npm install -g @stdlib/error-tools-msg2id-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: stdlib-msg2id [options] <msg>
@@ -108,7 +181,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ stdlib-msg2id 'invalid value. `%s` must be a number. Value: `%s`.'
@@ -139,11 +212,6 @@ $ stdlib-msg2id 'invalid value. `%s` must be a number. Value: `%s`.'
 
 <section class="related">
 
-## See Also
-
--   <span class="package-name">[`@stdlib/error-tools-msg2id`][@stdlib/error-tools-msg2id]</span><span class="delimiter">: </span><span class="description">return a two-character error identifier corresponding to a provided error message.</span>
-
-
 </section>
 
 <!-- /.related -->
@@ -161,7 +229,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -184,8 +252,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/error-tools-msg2id-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/error-tools-msg2id-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/error-tools-msg2id.svg
+[npm-url]: https://npmjs.org/package/@stdlib/error-tools-msg2id
 
 [test-image]: https://github.com/stdlib-js/error-tools-msg2id/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/error-tools-msg2id/actions/workflows/test.yml?query=branch:main
