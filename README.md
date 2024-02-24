@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@deno/mod.js';
+import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@v0.2.1-deno/mod.js';
 ```
 
 #### msg2id( msg )
@@ -92,7 +92,7 @@ var v = msg2id( 'beep boop baz' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@deno/mod.js';
+import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@v0.2.1-deno/mod.js';
 
 var list;
 var v;
