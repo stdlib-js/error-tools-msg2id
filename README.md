@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@esm/index.mjs';
+import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@v0.2.2-esm/index.mjs';
 ```
 
 #### msg2id( msg )
@@ -97,7 +97,7 @@ var v = msg2id( 'beep boop baz' );
 <body>
 <script type="module">
 
-import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@esm/index.mjs';
+import msg2id from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-msg2id@v0.2.2-esm/index.mjs';
 
 var list;
 var v;
