@@ -45,8 +45,8 @@
     "@stdlib/cli-ctor": "^0.2.2",
     "@stdlib/error-tools-database": "^0.3.0",
     "@stdlib/fs-read-file": "^0.2.2",
+    "@stdlib/object-inverse": "github:stdlib-js/object-inverse#main",
     "@stdlib/string-format": "^0.2.2",
-    "@stdlib/utils-object-inverse": "^0.2.2",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
