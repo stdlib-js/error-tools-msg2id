@@ -25,7 +25,7 @@
 var resolve = require( 'path' ).resolve;
 var readFileSync = require( '@stdlib/fs-read-file' ).sync;
 var CLI = require( '@stdlib/cli-ctor' );
-var msg2id = require( './../lib' );
+var msg2id = require( '@stdlib/error-tools-msg2id' );
 
 
 // MAIN //
